@@ -31,7 +31,7 @@ public class Main {
         int choice = scanner.nextInt();
         if (choice < 1 || choice > accounts.size()) {
             System.out.println("Invalid choice, please restart the application.");
-            return;
+            System.exit(0);
         }
 
         BankAccount selectedAccount = accounts.get(choice - 1);
